@@ -6,9 +6,16 @@
 
 <h1>{{product.name}}</h1>
 
-{% for sp in product_specifications %}
+{% if product.original_name %}
+<p>{{product.original_name}}</p>
+{% endif %}
 
+<p>{{product.category}}</p>
+
+{% for sp in product_specifications %}
 <p>{{sp.specification.title}} : {{sp.value}}</p>
 {% endfor %}
+
+<p>{{product.description}}</p>
 
 {% endblock content %}

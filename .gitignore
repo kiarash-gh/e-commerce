@@ -4,7 +4,14 @@
 *.pyc
 __pycache__
 db.sqlite3
-media
+
+
+# media formats
+*.jpg
+*.jpeg
+*.png
+
+
 
 # Backup files # 
 *.bak 
